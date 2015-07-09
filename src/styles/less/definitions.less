@@ -1,0 +1,70 @@
+/*==========================================================================
+                              COLORS & UX
+  ==========================================================================*/
+
+// breakpoints variables
+@smallest: 320px;
+@small: 620px;
+@medium: 820px;
+@normal: 1200px;
+@large: 2000px;
+
+@max-width: 2000px;
+
+
+// font & text colors
+@white: #ffffff;
+@blue: #1483c5;
+@black: #000;
+@light-grey: #c6c6c6;
+
+@text-grey: #3d403b;
+@see-more-grey: #595c58;
+
+@site-bg-grey: #eeeeee;
+@footer-bg-grey: #191919;
+@footer-txt-grey: #444444;
+@footer-white: #f9f9f9;
+
+@title-font: arial;
+@spacer:#cccccc;
+/* ==========================================================================
+                            Helper classes
+   ========================================================================== */
+
+// transitions & ux
+.transition(@props, @speed, @effect) {
+  -webkit-transition: @props @speed @effect;
+  -moz-transition: @props @speed @effect;
+  -o-transition: @props @speed @effect;
+  transition: @props @speed @effect;
+}
+
+.box-sizing(@type) {
+  -webkit-box-sizing: @type;
+  -moz-box-sizing: @type;
+  box-sizing: @type;
+}
+
+/* Add the .hidden class to any elements that you want to hide from all presentations, including screen readers. */
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/* Adding .clearfix to an element will ensure that it always fully contains its floated children.    */
+.clearfix {
+    &:before {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        content: " ";
+        display: table;
+        clear: both;
+    }
+}
+
+.left { float:left; }
+.right { float:right; }
+

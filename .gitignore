@@ -1,0 +1,43 @@
+#############
+## Windows detritus
+#############
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+# Recycle Bin used on file shares
+
+$RECYCLE.BIN/
+
+# Mac crap
+.DS_Store
+
+
+
+###########################
+##  CUSTOM GIT IGNORES
+###########################
+/node_modules
+/build
+.komodoproject
+/documentation
+
+/site/public/*
+/site/public/assets/css/
+/site/public/assets/js/
+/site/public/assets/html/
+/site/nbproject/private/
+/site/fuel/app/logs/
+/site/fuel/app/cache/
+.idea
+
+docs
+/site/*.lock
+/site/fuel/core/phpunit.xml
+/site/fuel/vendor
+/site/fuel/core/vendor
+/site/public/assets/img/sprites/*
+/site/fuel/packages/*

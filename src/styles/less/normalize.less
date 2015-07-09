@@ -1,0 +1,236 @@
+@import (reference) "definitions.less";
+/* 
+*    normalize.css v3.0.1 | MIT License | git.io/normalize 
+*    UNCOMMENTED COMBINED WITH HTML5 BOILERPLATE STYLES 
+*/
+
+/* ==========================================================================
+                    modernizr classes & information
+===========================================================================*/
+
+* { margin:0; }
+
+html, body { background-color:#fff; font:16px/32px; font-family: franklin-gothic, arial, sans-serif; color:@text-grey; -ms-text-size-adjust:100%; -webkit-text-size-adjust:100%; height:100%; width:100%; margin:0 auto; }
+
+body { min-width:@smallest; }
+
+/* =======================================================================
+                    HTML5 display definitions
+========================================================================== */
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary { display:block; }
+
+audio,canvas,progress,video { display:inline-block; vertical-align:baseline; }
+
+audio:not([controls]) { display:none; height:0; }
+
+[hidden],template { display:none; }
+
+/* ==========================================================================
+                                Links
+   ========================================================================== */
+a { background:transparent; color: @blue; text-decoration: none;}
+
+a.facebook-button { background-color:#3b5999; border-radius:5px; color:#fff; display:inline-block; font-family:Arial, sans-serif; font-size:18px; font-weight:bold; line-height:19px; padding:8px 30px; text-decoration:none; }
+	a.facebook-button span { display:inline-block; vertical-align:text-top; }
+
+a:active,a:hover { outline:0; }
+
+/* ==========================================================================
+                        Text-level semantics
+   ========================================================================== */
+
+abbr[title] { border-bottom:1px dotted; }
+
+b,strong { font-weight:bold; }
+
+dfn,em,i { font-style:oblique; }
+
+h1, h2, h3, h4, h5, h6 { margin:0; padding:0; font-weight:bold; line-height:1.0em; font-family:@title-font; color:@text-grey; text-transform: uppercase;}
+
+h1 { font-size:2.8em; }
+
+h2 { font-size:1.8em; color: @white; margin: 45px 0 25px 0; } // Title used in the footer
+
+h3 { font-size: 28px; font-family: franklin-gothic, arial, sans-serif; margin-bottom: 8%; }
+
+h4 { font-size: 46px; font-family: franklin-gothic, arial, sans-serif; font-weight: 900; color: @light-grey; }
+
+h5 { font-size:1.15em; }
+
+h6 { font-size:1.0em; }
+
+mark { background:#ff0; }
+
+p { margin:0 0 0.7em 0; }
+
+small { font-size:80%; }
+
+sub,sup { font-size:75%; line-height:0; position:relative; vertical-align:baseline; }
+
+sup { top:-0.5em; }
+
+sub { bottom:-0.25em; }
+
+ul, ol { list-style-position:inside; margin:0; padding:0; }
+
+ul li, ol li { list-style:none; margin:0; padding:0; }
+
+/* ==========================================================================
+                        Selection highlight color
+   ========================================================================== */
+
+::-moz-selection { background:#b3d4fc; text-shadow:none; }
+
+::selection { background:#b3d4fc; text-shadow:none; }
+
+/* ==========================================================================
+                            Embedded content
+   ========================================================================== */
+
+img { border:0; vertical-align:middle; }
+
+svg:not(:root) { overflow:hidden; }
+
+/* ==========================================================================
+                            Grouping content
+   ========================================================================== */
+
+figure { margin:0; }
+
+hr { -moz-box-sizing:content-box; box-sizing:content-box; height:0; display:block; border:0; border-top:1px solid @spacer; margin:0; padding:0; }
+
+pre { overflow:auto; }
+
+code,kbd,pre,samp { font-family:monospace; font-size:1em; }
+
+/* ==========================================================================
+                                    Forms
+   ========================================================================== */   
+button,input,optgroup,select,textarea { color:inherit; font:inherit; margin:0; outline:none; }
+
+button { overflow:visible; width:auto; }
+
+button, select { text-transform: none; }
+
+select { background-color:white; border:1px solid #e6e6e6; border-radius:5px; color:#59595c; font-family:Arial; font-size:14px; font-weight:normal; height:30px; line-height:14px; padding:0 7px; }
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] { -webkit-appearance:button; cursor:pointer; width:auto; }
+
+button[disabled],html input[disabled] { cursor:default; }
+
+button::-moz-focus-inner,
+input::-moz-focus-inner { border:0; padding:0; }
+
+fieldset { border:1px solid rgb(220,220,220); padding:10px; box-sizing:border-box; }
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button { height:auto; }
+
+input[type="search"] { -webkit-appearance:textfield; .box-sizing(content-box); }
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration { -webkit-appearance:none; }
+
+label.updated input, label.updated select { border:1px solid rgb(37, 155, 36); }
+
+
+label {
+	display:block; vertical-align:top; /* required, otherwise webkit breaks adjacent inline-block elements */
+
+	a { color:#ed2427; }
+}
+
+legend { border:0; padding:0; }
+
+optgroup { font-weight:bold; }
+
+select { display:inline-block; }
+
+textarea { overflow:auto; resize:vertical; width:auto; }
+
+label:before { content:" "; display:table; }
+label:after { content:" "; display:table; clear:both; }
+
+/* Shared Checkboxes and Radios */
+	input[type=checkbox],
+	input[type=radio] { box-sizing:border-box; display:none; padding:7px; height:18px; width:18px; }
+
+	input[type=checkbox] + label,
+	input[type=radio] + label { cursor:pointer; color:#a5a5a5; display:inline-block; font-family:Arial, sans-serif; font-size:16px; line-height:19px; margin-right:40px; padding-left:29px; position:relative; vertical-align:middle; }
+
+	input[type=checkbox].error + label span,
+	input[type=radio].error + label span { border:2px solid #ec2327; left:-2px; top:-2px; }
+
+/* Checkboxes */
+	input[type=checkbox] + label span { background:#d7d7d7; border:none; border-radius:4px; cursor:pointer; display:block; height:19px; left:0; position:absolute; top:0; width:19px; }
+	input[type=checkbox]:checked + label span { background-image:url("/assets/img/checkbox-tick.png"); }
+
+/* Radios */
+	input[type=radio] + label span { background:#d7d7d7; border:none; border-radius:10px; cursor:pointer; display:block; height:16px; left:0; position:absolute; top:0; width:16px; }
+	input[type=radio]:checked + label span:after { background-color:#ec2327; border-radius:10px; content:" "; height:8px; left:4px; position:absolute; top:4px; width:8px; }
+
+button,
+input[type="submit"] { background-color:#ec2327; border:none; border-radius:5px; font-family:Arial, sans-serif; font-size:18px; font-weight:bold; line-height:18px; padding:6px 50px; }
+
+textarea { border:1px solid #e6e6e6; border-radius:5px; box-sizing:border-box; font-family:Arial, sans-serif; font-size:14px; font-weight:normal; line-height:16px; padding:5px 7px; }
+
+input[type="text"],
+input[type="email"],
+input[type="password"] { border:1px solid #e6e6e6; border-radius:5px; box-sizing:border-box; color:#59595c; font-family:Arial, sans-serif; font-size:14px; font-weight:normal; height:30px; line-height:30px; padding:0 7px; }
+
+textarea.error,
+input[type="text"].error,
+input[type="email"].error,
+input[type="password"].error { border:2px solid #ec2327; margin-left:-1px; }
+
+::-webkit-input-placeholder { color:#59595c; font-family:Arial, sans-serif; font-size:14px; }
+:-moz-placeholder { color:#59595c; font-family:Arial, sans-serif; font-size:14px; }
+::-moz-placeholder { color:#59595c; font-family:Arial, sans-serif; font-size:14px; }
+:-ms-input-placeholder { color:#59595c; font-family:Arial, sans-serif; font-size:14px; }
+input[type="email"].placeholder,
+input[type="text"].placeholder,
+textarea.placeholder { color:#59595c; font-family:Arial, sans-serif; font-size:14px; }
+
+/* ==========================================================================
+                                    Tables
+   ========================================================================== */
+
+table { border-collapse:collapse; border-spacing:0; }
+
+td,th { padding:0; }
+   
+
+/* ==========================================================================
+                                Print styles
+   ========================================================================== */
+
+@media print {
+    * { background:transparent !important; color:#000 !important; box-shadow:none !important; text-shadow:none !important; }
+
+    a,a:visited { text-decoration:underline; }
+
+    a[href]:after { content:" (" attr(href) ")"; }
+
+    abbr[title]:after { content:" (" attr(title) ")"; }
+
+    .ir a:after,
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after { content:""; }
+
+    pre,blockquote { border:1px solid #999; page-break-inside:avoid; }
+
+    thead { display:table-header-group; /* h5bp.com/t */ }
+
+    tr,img { page-break-inside:avoid; }
+
+    img { max-width:100% !important; }
+
+    @page { margin:0.5cm; }
+
+    p,h2,h3 { orphans:3; widows:3; }
+
+    h2,h3 { page-break-after:avoid; }
+}
